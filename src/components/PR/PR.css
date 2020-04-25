@@ -1,0 +1,45 @@
+.PR {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 2px;
+  height: 6rem;
+  box-shadow: var(--primary-shadow);
+  padding: 2rem;
+  margin-bottom: 2rem;
+  color: white;
+}
+
+.PR__Brand {
+  height: 3.5rem;
+  width: 3.5rem;
+}
+
+.PR__Branch-Name {
+  font-size: 1.2rem;
+}
+
+.PR__Reviewers {
+  border: 2px solid white;
+  border-radius: 50%;
+  background-color: #30475e;
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.PR__Created {
+  font-size: 1.2rem;
+}
+
+.PR__Status {
+  border: 2px solid var(--white);
+  background-color: greenyellow;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+}
