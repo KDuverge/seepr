@@ -1,0 +1,36 @@
+.Login__Button {
+  width: 100%;
+  height: 7rem;
+  border-radius: 2px;
+  background: var(--primary-bg);
+  border: none;
+  box-shadow: var(--primary-shadow);
+  font-size: 2rem;
+  color: var(--font-color);
+  letter-spacing: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.Login__Button:hover {
+  transform: translate(3px, 3px);
+  box-shadow: var(--primary-shadow-hover);
+}
+
+.Login__Button-Github {
+  background: white;
+  color: var(--font-color-inverse);
+}
+
+.Login__Button-Gitlab {
+  background: #000;
+  color: whitesmoke;
+}
+
+.Login__Button-Gitlab svg,
+.Login__Button-Github svg {
+  margin-left: 2rem;
+}

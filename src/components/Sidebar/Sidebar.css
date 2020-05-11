@@ -6,6 +6,12 @@
   flex-direction: column;
   box-shadow: var(--regular-box-shadow);
   transition: all 0.2s ease;
+  padding-top: 1rem;
+}
+
+.Sidebar svg {
+  fill: var(--primary-svg-fill);
+  transition: all 0.2s ease;
 }
 
 .Sidebar__Avatar {
@@ -62,8 +68,7 @@
 }
 
 .active {
-  box-shadow: 12px 12px 16px 0 #343434 inset,
-    -8px -8px 12px 0 rgba(0, 0, 0, 0.25) inset;
+  box-shadow: var(--primary-shadow-active);
   transition: all 0.1s ease;
 }
 

@@ -1,4 +1,48 @@
 .Home {
   height: 100vh;
   width: 100%;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.Home__Header {
+  height: 20rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transform: translate(4rem, -10rem);
+  color: var(--font-color);
+}
+
+.Home__Header-Title {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.Home__Header-Sub-Title {
+  font-size: 2rem;
+  font-weight: lighter;
+}
+
+.Home__Login {
+  height: 25rem;
+  width: 40rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  transform: translateY(-5rem);
+}
+
+.Home__Buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 2rem;
+  height: 20rem;
+  width: 100%;
 }

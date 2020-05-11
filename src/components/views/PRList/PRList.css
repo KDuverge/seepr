@@ -9,13 +9,13 @@
 .PRList__Table {
   height: 50rem;
   width: 80rem;
-  /* box-shadow: var(--primary-shadow); */
   border-radius: 2px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   padding-top: 10rem;
+  transform: translateY(-10rem);
 }
 
 .PRList__Table-Header {
@@ -28,7 +28,7 @@
   height: 6rem;
   /* padding: 2rem; */
   margin-bottom: 2rem;
-  color: white;
+  color: var(--font-color);
   font-size: 1.5rem;
 }
 
@@ -47,4 +47,18 @@
 
 .right {
   justify-self: end;
+}
+
+.Load__Button {
+  position: absolute;
+  top: 5rem;
+  right: 5rem;
+  width: 10rem;
+}
+
+.Theme__Button {
+  position: absolute;
+  top: 5rem;
+  right: 20rem;
+  width: 10rem;
 }

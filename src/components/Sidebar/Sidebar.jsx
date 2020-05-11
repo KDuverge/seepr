@@ -6,6 +6,8 @@ import PR from "../../images/pr";
 import Avatar from "../../images/farmer.svg";
 import Cog from "../../images/cog";
 
+import Toggle from '../Toggle/Toggle';
+
 import "./Sidebar.css";
 
 function Sidebar() {
@@ -31,6 +33,7 @@ function Sidebar() {
           </NavLink>
         </li>
       </ul>
+      <Toggle />
     </nav>
   );
 }

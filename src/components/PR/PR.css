@@ -8,7 +8,14 @@
   box-shadow: var(--primary-shadow);
   padding: 2rem;
   margin-bottom: 2rem;
-  color: white;
+  color: var(--font-color);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.PR:hover {
+  transform: translate(3px, 3px);
+  box-shadow: var(--primary-shadow-hover);
 }
 
 .PR__Brand {
@@ -16,8 +23,9 @@
   width: 3.5rem;
 }
 
-.PR__Branch-Name {
-  font-size: 1.2rem;
+.PR__Branch-Name,
+.PR__Created {
+  font-size: 1.3rem;
 }
 
 .PR__Reviewers {
@@ -30,14 +38,11 @@
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
-}
-
-.PR__Created {
-  font-size: 1.2rem;
+  color: whitesmoke;
 }
 
 .PR__Status {
-  border: 2px solid var(--white);
+  border: 2px solid var(--font-color);
   background-color: greenyellow;
   height: 2rem;
   width: 2rem;

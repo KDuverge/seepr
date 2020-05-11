@@ -1,0 +1,1 @@
+export const TOGGLE_THEME_LIGHT = '[Toggle Theme] Light';

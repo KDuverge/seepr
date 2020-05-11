@@ -1,10 +1,13 @@
 :root {
   --primary-shadow: 12px 12px 16px 0 #1f1f1f, -10px -4px 12px 0 #3b3b3b;
+  --primary-shadow-hover: 6px 6px 8px 0 #1f1f1f;
+  --primary-shadow-active: 12px 12px 16px 0 #343434 inset,
+    -8px -8px 12px 0 rgba(0, 0, 0, 0.25) inset;
   --primary-sidebar-bg: linear-gradient(145deg, #303030, #292929);
   --primary-bg: var(--primary-sidebar-bg);
   --primary-svg-fill: #474747;
-
-  --white: whitesmoke;
+  --font-color-inverse: #000;
+  --font-color: whitesmoke;
 
   --regular-box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.25);
 }
@@ -24,6 +27,7 @@ body,
 html {
   height: 100vh;
   width: 100%;
+  transition: all 1s ease;
 }
 
 #root {
@@ -37,7 +41,16 @@ html {
   }
 }
 
-svg {
-  fill: var(--primary-svg-fill);
-  transition: all 0.2s ease;
+.light {
+  --primary-shadow: 12px 12px 24px 0 rgba(0, 0, 0, 0.2),
+    -12px -12px 24px 0 rgba(255, 255, 255, 0.5);
+  --primary-shadow-hover: 6px 6px 8px 0 #e6e6e6;
+  --primary-bg: linear-gradient(145deg, #f8f8f8, #cccccc);
+  --primary-sidebar-bg: var(--primary-bg);
+  --primary-svg-fill: #b4b4b4;
+  --primary-shadow-active: 12px 12px 16px 0 #d8d8d8 inset,
+    -8px -8px 12px 0 rgba(199, 199, 199, 0.986) inset;
+  --font-color: #000;
+  --font-color-inverse: #000;
+  --regular-box-shadow: 2px 2px 10px 0 rgba(224, 224, 224, 0.541);
 }
